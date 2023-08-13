@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url(variaveis.css);
+
+
+/*tablet*/
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) 
+{
+    header{
+        min-height: 706px;
+        background-image: url('../img/halter.png') ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+        
+    header > div {
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        background-color: var(--azul01);
+    }
+    span#burguer{
+        display: none;
+        
+    }
+    menu{
+        display: block;
+    }
+
+    menu >ul> li{
+        display: inline-block;
+    }
+
+    main{
+       width: 768px;
+    }
+
+ 
+     
+}
