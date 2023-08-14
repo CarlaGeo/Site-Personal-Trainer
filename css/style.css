@@ -22,6 +22,7 @@ body, html {
 header {
   
     min-height: 300px;
+    width: 100%;
     background-color: var(--azul01);
     background-image: url('../img/halter.png') ;
     background-position: center bottom;
@@ -29,22 +30,30 @@ header {
     background-size: cover;
     
 }
-header > div {
+div#superior {
     display: none;
 }
 
-header  > img {
-  padding: 10px;
+div#imagem{
+   display: block;
+   margin: auto;
+   padding: 10px;
+   text-align: center;
+   color: white;
+   
 }
 
+div#imagem > p{
+    padding: 10px;
+}
 span#burguer{
-    background-color: rgb(65, 64, 64);
-    
+    background-color: var(--azul01);
     display: block;
     color: white;
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    margin: 0px;
 }
 menu{
     display: none;
@@ -59,12 +68,13 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(56, 54, 54);
+    background-color:var(--azul01);
     color: white;
-    border-top: 2px solid gray;
+    border-top: 2px solid var(--azul02);
+    
 }
 
 menu > ul > li> a:hover{
-    background-color: gray;
+    background-color: var(--azul02);
 }
 
