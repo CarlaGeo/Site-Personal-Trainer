@@ -37,7 +37,7 @@ div#superior {
 div#imagem{
    display: block;
    margin: auto;
-   padding: 10px;
+  padding: 10px;;
    text-align: center;
    color: white;
    
@@ -70,7 +70,7 @@ menu > ul > li > a {
     text-align: center;
     background-color:var(--azul01);
     color: white;
-    border-top: 2px solid var(--azul02);
+   /* border-top: 2px solid var(--azul02);*/
     
 }
 

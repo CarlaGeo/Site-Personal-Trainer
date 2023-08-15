@@ -22,7 +22,7 @@
     }
 
         
-    header > div {
+    div#superior {
         display: block;
         margin: auto;
         width: 100%;
@@ -31,17 +31,53 @@
         color: white;
         background-color: var(--azul01);
     }
+
+    div#imagem{
+        display: none;
+        margin-left: 0px;
+        padding: 10px;;
+       
+        color: white;
+        
+     }
+     div#menu{
+        background-color: var(--azul01);
+        height: 50px;
+        padding: 10px;
+     }
     span#burguer{
         display: none;
         
     }
     menu{
         display: block;
+        margin: auto;
+        text-align: center;
+        
     }
 
     menu >ul> li{
         display: inline-block;
+
     }
+
+    
+menu > ul > li > a {
+    display:block ;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+   /* border-top: 2px solid var(--azul02);*/
+    
+}
+
+menu > ul > li> a:hover{
+   color: blueewwwwwwwwwww];
+}
+
+
 
     main{
        width: 768px;
