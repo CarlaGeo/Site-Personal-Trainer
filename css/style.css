@@ -70,7 +70,7 @@ menu > ul > li > a {
     text-align: center;
     background-color:var(--azul01);
     color: white;
-   /* border-top: 2px solid var(--azul02);*/
+    border-top: 2px solid var(--azul02);
     
 }
 
