@@ -25,34 +25,55 @@
     div#superior {
         display: block;
         margin: auto;
-        width: 100%;
         text-align: center;
         padding: 10px;
         color: white;
         background-color: var(--azul01);
     }
 
-    div#imagem{
-        display: none;
-        margin-left: 0px;
-        padding: 10px;;
-        color: white;
+    section#inicio{
+        width: 50%;
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        display: inline-block;
+        transition-timing-function: ease; /*sempre no final*/
+        transform: translate(-25%, -90%); /*sempre no final*/
+
+    }
+
+    div#imagem {
+        display: inline-block;
+        width: 150px;
+     }
+    img{
+        display: inline-block;
+        width: 150px;
         
      }
-     div#menu{
-        background-color: var(--azul01);
-        height: 50px;
-        padding: 10px;
+
+     div#imagem > p {
+        display: none;
      }
+
+     div#menu{
+        position: absolute;
+        padding-top: 50px;
+        display: inline-block;
+        width:700px;
+        text-align: center;
+     
+     }
+
+
     span#burguer{
         display: none;
-        
     }
+
     menu{
+        width: 700px;
         display: block;
-        margin: auto;
-        text-align: center;
-        
+        text-align: center;       
     }
 
     menu >ul> li{
@@ -60,8 +81,10 @@
 
     }
 
-    menu > ul > li > a {
-        display:block ;
+    
+    menu > ul >  li > a{
+        display:inline-block ;
+        font-size: 1em;
         padding: 10px;
         text-decoration: none;
         text-align: center;
@@ -70,9 +93,32 @@
         border-top: none;
     }
 
+    menu > ul > li#img{
+        display: block;
+    }
+
     menu > ul > li> a:hover{
         background-color: transparent;
         color: blue;
+    }
+
+   .BotaoContato{
+        background-color: #132E4C;
+        width: 150px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .BotaoContato:hover{
+        background-color: var(--azul02);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+    }
+
+    section > p{
+        font-family: Candal;
+        font-size: 3em;
+        color: white;
+        text-shadow: 0px 0px 10px black;
     }
 
     main{

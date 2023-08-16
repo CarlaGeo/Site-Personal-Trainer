@@ -37,7 +37,7 @@ div#superior {
 div#imagem{
    display: block;
    margin: auto;
-  padding: 10px;;
+   padding: 10px;
    text-align: center;
    color: white;
    
@@ -45,6 +45,11 @@ div#imagem{
 
 div#imagem > p{
     padding: 10px;
+}
+
+section#inicio{
+    width: 100%;
+    display: block;
 }
 span#burguer{
     background-color: var(--azul01);
@@ -73,6 +78,7 @@ menu > ul > li > a {
     border-top: 2px solid var(--azul02);
     
 }
+
 
 menu > ul > li> a:hover{
     background-color: var(--azul02);
