@@ -1,17 +1,8 @@
 @charset "UTF-8";
 @import url(variaveis.css);
 
-
-/*tablet*/
-
-/*
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    
-
-}*/
-
 /*Desktop*/
-/*@media screen and (min-width: 992px) 
+@media screen and (min-width: 700px) 
 {*/
 
     * { /*Todos os elementos terão essas configurações se não estiver em  uma configuração própria*/
@@ -22,17 +13,21 @@
     body, html {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em;
-      
+        margin: 0px;
     }
-    
-    header{
-        min-height: 706px;
-        background-image: url('../img/halter.png') ;
-        background-position: center center;
+    section#inicio{
+        width: 100%;
+        height: 700px;
+        background-image: url('../img/halter.png') ; 
+        background-position: bottom center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    
+    header{
+        min-height: 200px;
+        width: 100%;
+    }
         
     div#superior {
         display: block;
@@ -43,70 +38,26 @@
         background-color: var(--azul01);
     }
 
-    section#inicio{
-        width: 50%;
-        position: absolute;
-        top: 60%;
-        left: 30%;
-        display: inline-block;
-        transition-timing-function: ease; /*sempre no final*/
-        transform: translate(-25%, -90%); /*sempre no final*/
-
-    }
-
-    div#imagem {
-        display: inline-block;
-        width: 150px;
-     }
-    img{
-        display: inline-block;
-        width: 150px;
-        
-     }
-
-     div#imagem > p {
-        display: none;
-     }
-
-     div#menu{
-        position: absolute;
-        padding-top: 50px;
-        display: inline-block;
-        width:700px;
-        text-align: center;
-     
-     }
-
-
-    span#burguer{
-        display: none;
-    }
-
     menu{
-        width: 700px;
-        display: block;
+        margin: auto;
+        max-width: 1000px;
+        display: inline-block;
         text-align: center;       
     }
 
     menu >ul> li{
         display: inline-block;
-
     }
 
-    
     menu > ul >  li > a{
         display:inline-block ;
         font-size: 1em;
-        padding: 10px;
+        padding: 12px;
         text-decoration: none;
         text-align: center;
         background-color: transparent;
         color: white;
         border-top: none;
-    }
-
-    menu > ul > li#img{
-        display: block;
     }
 
     menu > ul > li> a:hover{
@@ -115,53 +66,101 @@
     }
 
    .BotaoContato{
-        background-color: var(--azul03);
+        background-color: var(--vermelho);
         width: 150px;
+        height: 40px;
         border-radius: 5px;
-        padding: 10px;
+        padding-top: 15px;
+        padding-bottom: 12px;
+  
     }
 
     .BotaoContato:hover{
-        background-color: var(--azul02);
+        background-color: var(--vermelho1);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
     }
 
-   .Botao{
-
-        width: 300px;
-        height: 40px;
-        background-color: var(--azul03);
-
-
-        text-align: center;
-        border-radius: 5px;
-        padding: 20px 10px 10px 10px; 
-    
-   }
-
-   .Botao:hover{
-        background-color: var(--azul02);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
-   }
-   ul > a{
-        font-size: 1.5em;
+    .BotaoContato > a:hover{
         text-decoration: none;
-        color: white;
+        color: black;
+    }
 
-   }
+    div#textoInicial{
+        margin: auto;
+        max-width: 1100px;
+    }
 
-    section > p{
-        font-family: Candal;
-        font-size: 3em;
+    img#logo {/*logo*/
+        
+        float: left;
+        width: 200px;
+        height: 200px;
+     }
+    
+     div#textoSection{
+        font-family:'Signika Negative', Arial, Helvetica, sans-serif;
+        font-size: 56px;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+        float: left;
+        color: var(--branco);
+        width: 850px;
+        padding-left: 20px;
+     }
+     .BotaoAgende{
+        background-color: var(--vermelho);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+        width: 450px;
+        height: 60px;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom: 12px;
+    
+     }
+     .BotaoAgende > a{
+        font-size: 1.55em;
+        padding: 12px;
+        text-decoration: none;
+        text-align: center;
+        background-color: transparent;
         color: white;
-        text-shadow: 0px 0px 10px black;
+        border-top: none;
+     }
+
+     .BotaoAgende:hover{
+        background-color: var(--vermelho1);
+
+    }
+    .BotaoAgende > a:hover{
+        text-decoration: none;
+        color: black;
+    }
+    span#burguer{
+        display: none;
     }
 
     main{
-       
+        margin: auto;
+        width: 1300px;
+        text-align: center;
     }
 
- 
- /*    
+    section#TreinosPersonalizados{
+
+    }
+    section#TreinosPersonalizados > h1{
+        margin: 0px;
+        padding: 40px 10px 10px 10px;
+        font-size: 42px;
+        font-family:'Signika Negative', Arial, Helvetica, sans-serif ;
+        
+    }
+     
 }
+ 
+/*tablet*/
+/*
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+
+} 
 */

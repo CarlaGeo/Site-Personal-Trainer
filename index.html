@@ -4,50 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Trainer</title>
-    <!--Link para icones-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/media.css">
     <script src="js/script.js"></script>
-    
+    <style>
+        .palavra{
+            color: red;
+            font-weight: bolder;
+        }
+        table{
+            margin: auto;
+            text-align: center;
+            max-width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 5px;
+            text-align: center;/*Alinhamento horizontal*/
+            vertical-align: middle ;/*Alinhamento vertical*/
+        }
+    </style>
 </head>
 <body onresize="mudouTamanho()">
+    <section id="inicio">
     <header>
         <div id="superior">
             <span class="material-icons">call</span> (013) 99999-9999</li>
             <span class="material-icons">email</span>email@email.com.br</li>
+            <br>
+            <menu id="itens">
+                <ul>
+                    <li><a href="">INÍCIO</a></li>
+                    <li><a href="">SOBRE</a></li>
+                    <li><a href="">SERVIÇOS</a></li>
+                    <li><a href="">PRODUTOS</a></li>
+                    <li><a href="">DEPOIMENTOS</a></li>
+                    <li class="BotaoContato" ><a href="#" type="button">CONTATO</a></li>
+                </ul>
+            </menu> 
         </div>
-        <section id="inicio">
-            <div id="imagem">
-                <img src="img/sua-logo-aqui.png" alt="logo marca">
-                <p>(13) 99999-9999</p>
-            </div>
-            <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span> <!--Ícone do Menu-->
-            <div id="menu">
-                <menu id="itens">
-                    <ul style="height: 75px;">
-                        <li><a href="#">INÍCIO</a></li>
-                        <li><a href="#">SOBRE</a></li>
-                        <li><a href="#">SERVIÇOS</a></li>
-                        <li><a href="#">PRODUTOS</a></li>
-                        <li><a href="#">DEPOIMENTOS</a></li>
-                        <li class="BotaoContato" ><a href="#" type="button">CONTATO</a></li>
-                    </ul>
-                </menu>  
-            </div> 
-
-            <p>A hora é AGORA!</p>
-            <p>Treinos personalizados!</p><br>
-            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2em;">Conquiste seus objetivos de forma segura e eficaz!</p>
-
-            <ul class="Botao"><a href="#" type="button"  >Agende sua aula</a></ul>
-        </section>
-       
-       
-        
+         <!-- <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span> Ícone do Menu-->
     </header>
+    <div id="textoInicial">
+        <img id="logo" src="img/sua-logo-aqui.png" alt="logo marca">
+        <div id="textoSection">
+            <div>A HORA É <span class="palavra">AGORA!</span></div>
+            <div style="font-size: 40px;"> Conquiste seus objetivos de forma segura e eficaz!</div><br>
+            <div>Treinos personalizados!</div>
+            <button  class="BotaoAgende"><a href="#">Agende sua Avaliação</a></button>
+        </div>
+    </div>
+    </section>
     <main>
-    
+        <section id="TreinosPersonalizados">
+           <h1>TREINOS PERSONALIZADOS PARA ATINGIR OS RESULTADOS QUE VOCÊ DESEJA</h1>
+           <table>
+               <tr>
+                <td><img src="img/Alto Rendimento.png" alt="Alto Rendimento"></td>
+                <td><img src="img/Definicao.png" alt="Definição"></td>
+                <td><img src="img/emagrecimento.png" alt="Emagrecimento"></td>
+               </tr>
+               <tr >
+                <td>ALTO RENDIMENTO</td>
+                <td>DEFINIÇÃO</td>
+                <td>EMAGRECIMENTO</td>
+               </tr>
+
+               <tr>
+                <td><img src="img/Hipertofia.png" alt="hipertrofia"></td>
+                <td><img src="img/Performance.png" alt="Performance"></td>
+                <td><img src="img/Qualidade de Vida.png" alt="Qualidade de Vida"></td>
+               </tr>
+               <tr>
+                <td>HIPERTROFIA</td>
+                <td>PERFORMANCE</td>
+                <td>QUALIDADE DE VIDA</td>
+            </tr>
+
+        </section>
     </main>
     <footer>
 

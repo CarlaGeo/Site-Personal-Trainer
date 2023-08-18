@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Candal&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Fjalla+One&family=PT+Sans:wght@700&family=Signika+Negative:wght@700&display=swap');
 
 :root{
     --fonte-padrao: Arial, Helvetica, sans-serif;
@@ -13,4 +14,6 @@
     --azul05:#03FDBB;
     --preto: black;
     --branco: white;
+    --vermelho:red;
+    --vermelho1:rgba(247, 60, 60, 0.6);
  }
