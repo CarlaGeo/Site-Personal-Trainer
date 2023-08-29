@@ -273,16 +273,13 @@
         background-color: #102C54;
         color: white;
     }
-
-    section#Contato > div > ul{
-        list-style-position: inside;
-        list-style: none;
-        line-height: 3;
-        text-align: left;
-        text-indent:3px;
-        
+    section#Contato > h2{
+        margin: auto;
+        width: 50%;
+       padding: 40px;
     }
-      
+
+
 }
  
 /*tablet*/
