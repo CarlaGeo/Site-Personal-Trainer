@@ -322,6 +322,13 @@
         color: white;
         margin-left: 100px;
      }
+
+     section#sobre{
+        padding: 20px;
+        width: 90%; 
+        height: 800px; 
+        
+     }
 }
 
 /*tablet*/
