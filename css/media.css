@@ -329,6 +329,32 @@
         height: 800px; 
         
      }
+            
+    #container {
+        margin-left: 50px;
+        padding: 20px;
+        width: 90%;
+        position: inherit;
+        background-color: none;
+        display: grid;
+        /* aqui eu defino que o Grid tem Duas colunas uma com width:auto e outra com 50px */
+        grid-template-columns: 300px auto; 
+    }
+    
+    #esquerdo {
+        vertical-align: top;
+        height: 400px;
+        background-color: none;
+        display: inline-block;
+    }
+    #direito {
+        padding-left: 20px;
+        vertical-align: top;
+        height: 400px;
+        background-color: none;
+        display: inline-block;
+    }
+    
 }
 
 /*tablet*/
