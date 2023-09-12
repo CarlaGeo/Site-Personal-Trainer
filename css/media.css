@@ -131,8 +131,6 @@
      .BotaoAgende:hover{
         background-color: var(--vermelho1);
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.644);
-      
-
     }
     .BotaoAgende > a:hover{
         text-decoration: none;
@@ -287,7 +285,7 @@
     footer{    
         width: 100%;
         height: 80px;
-        background-color: #102C54;
+        background-color:var(--azul06);
         padding-top: 50px;
     }
 
@@ -326,35 +324,63 @@
      section#sobre{
         padding: 20px;
         width: 90%; 
-        height: 800px; 
+        height: 600px; 
         
      }
             
     #container {
-        margin-left: 50px;
+        margin-left: auto;
         padding: 20px;
-        width: 90%;
+        width: 80%;
         position: inherit;
-        background-color: none;
         display: grid;
-        /* aqui eu defino que o Grid tem Duas colunas uma com width:auto e outra com 50px */
         grid-template-columns: 300px auto; 
     }
-    
+
     #esquerdo {
         vertical-align: top;
-        height: 400px;
-        background-color: none;
         display: inline-block;
     }
     #direito {
         padding-left: 20px;
         vertical-align: top;
-        height: 400px;
-        background-color: none;
-        display: inline-block;
+        display: inline-block;    
     }
-    
+
+    #direito > h2 {
+        font-size: 40px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #direito > h3 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #direito > p {
+        font-size: 22px;
+        text-align: justify;
+        padding: 0px 50px 0px 50px;
+        line-height: 1.6;
+    }
+    section#historia{
+        height: 500px;
+        line-height: 1.6;
+        padding: 20px 120px 70px 120px;
+        text-align: justify;
+        text-indent: 1.1em;
+        font-size: 20px;
+        background-color:var(--azul04);
+   }
+
+    section#AHoraEAgora{
+        background-color: var(--azul06);
+        height: 300px;
+    }
+    iframe{
+        height: 300px;
+    }
 }
 
 /*tablet*/
