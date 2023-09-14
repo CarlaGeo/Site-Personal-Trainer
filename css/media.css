@@ -376,11 +376,25 @@
 
     section#AHoraEAgora{
         background-color: var(--azul06);
-        height: 300px;
+        height: 400px;
+    }
+
+    section#AHoraEAgora >  div{
+        margin-left: 150px;
+        margin-right: 150px;
+       
+        padding: 50px;
+        font-size: 40px;
+        color: white;
+        font-family: 'Signika Negative', Arial, Helvetica, sans-serif ;
+        text-align: center;
     }
     iframe{
         height: 300px;
     }
+
+
+    
 }
 
 /*tablet*/
