@@ -13,37 +13,38 @@
     <link rel="stylesheet" href="css/variaveis.css"
     <script src="js/script.js"></script>
     <title>iframe Contato html</title>
-    <style>
-       
-       section{
+    <style>     
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      section{
             width: 100%;
         }
         #container {
             margin: auto;
-            width: 90%;
-            position: inherit;
+            position:inherit;
             display: grid;
-            grid-template-columns: 600px 600px; 
-          
+            grid-template-columns: 600px 600px;         
         }
         #esquerdo {
             vertical-align: top;
             display: inline-block;
             padding: 20px;
-            border-top: 1px solid grey;
-            border-left: 1px solid grey;
-            border-bottom:  1px solid grey;
-            border-radius: 15px 0px 0px 15px;
+           
+        }
+
+        #esquerdo > fieldset > div {
+            font-size: 1.2em;
+            padding: 10px;
         }
         #direito {
             vertical-align: top;
             display: inline-block;
-            padding: 20px;
-            border-top: 1px solid grey;
-            border-right: 1px solid grey;
-            border-bottom:  1px solid grey;
-            border-radius: 0px 15px 15px 0px;
+            padding: 20px 20px 20px 50px;
+          
         }
+       
         button{
             background-color: var(--vermelho);
             width: 100%;
@@ -53,64 +54,55 @@
             padding-bottom: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
             border: none;
+            color: white;
         }
-
         button:hover{
             background-color: var(--vermelho1);
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
         }
-
         button > a:hover{
             text-decoration: none;
             color: black;
         }
-
-        
-       
-        
     </style>
 </head>
 <body>
     <section> 
         <div id="container">
             <div id="esquerdo">
-                <form >
-                    <fieldset>
-                        <legend>Deixe a sua mensagem</legend>
-                        <div class="form-group">
-                            <input type="text"  class="form-control" name="nome" id="inome" required minlength="5" maxlength="15" placeholder="Preencha o seu nome" autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email"  class="form-control"  name="email" id="iemail"  placeholder="Seu e-mail" autocomplete="mail" required size="50">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel"  class="form-control" name="telefone" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="Seu telefone" required>
-                        </div> 
-                        <div class="form-group">
-                            <textarea type="text"  class="form-control" rows="5" name="mensagem" id="imensagem"  autocomplete="msg"  placeholder="Sua mensagem aqui" required ></textarea>
-                        </div> 
-                        <div class="form-group">
-                            <button type="submit" >Enviar</button> 
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div id="direito">
                 <fieldset>
                     <legend>Fale Conosco</legend>
-
-                    <div> telefone</div>
-                    <div> email</div>
-
-                    <div>Whatsapp</div>
-
-                    <div>
+                    <div> <p> &#9743 (13) (13) 98197-930</p></div>
+                    <div> <p> &#9993 email@gmail.com.br</p> </div>
+                    <div style="vertical-align:top, display=inline-block;">
                         <a href="https://wa.link/n64uap" target="_blank"><img src="img/Whatsapp.png" alt=""></a>
+                        <a href="https://www.instagram.com/prof.david_chiacchio/" target="_blank"><img src="img/instagram.png" alt=""></a>
+                        <a href="#" target="_blank"><img src="img/facebook.png" alt=""></a>
+                    </div>
+            </div>
+            <div id="direito">
+            </fieldset>
+            <form >
+                <fieldset>
+                    <legend>Deixe a sua mensagem</legend>
+                    <div class="form-group">
+                        <input type="text"  class="form-control" name="nome" id="inome" required minlength="5" maxlength="15" placeholder="Preencha o seu nome" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email"  class="form-control"  name="email" id="iemail"  placeholder="Seu e-mail" autocomplete="mail" required size="50">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel"  class="form-control" name="telefone" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="Seu telefone" required>
+                    </div> 
+                    <div class="form-group">
+                        <textarea type="text"  class="form-control" rows="5" name="mensagem" id="imensagem"  autocomplete="msg"  placeholder="Sua mensagem aqui" required ></textarea>
+                    </div> 
+                    <div class="form-group">
+                        <button type="submit" >Enviar</button> 
                     </div>
                 </fieldset>
-               
-            </div>
-               
+            </form>
+            </div> 
         </div>
     </section>
 </body>
