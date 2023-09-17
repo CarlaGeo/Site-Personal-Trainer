@@ -172,7 +172,10 @@
         text-align: center;/*Alinhamento horizontal*/
         vertical-align: middle ;/*Alinhamento vertical*/
     }
-
+    td > a{
+        color: black;
+        text-decoration: none;
+    }
     section#TipoTreino{
         width: 96%;
         height: 720px;
@@ -437,6 +440,26 @@
        font-size: 1.5em;
        font-weight: bold;
      
+    }
+
+    /*Pagina Depoimentos*/
+    main#mainDepoimentos{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .comCor{
+
+        margin: 20px auto;
+        width: 50%; 
+        height: 200px;
+        padding: 30px;
+        background-color: #9ad4fe5b;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.251);
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
     }
     
 }
