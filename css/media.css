@@ -15,9 +15,9 @@
         font-size: 1em;
         margin: 0px;
     }
-    section#inicio{
+    section#inicioIndex{
         width: 100%;
-        height: 700px;
+        height: 650px;
         background-image: url('../img/halter.png') ; 
         background-position: bottom center;
         background-repeat: no-repeat;
@@ -173,12 +173,14 @@
         vertical-align: middle ;/*Alinhamento vertical*/
     }
     td > a{
+
         color: black;
         text-decoration: none;
     }
+
     section#TipoTreino{
         width: 96%;
-        height: 720px;
+        height: auto;
         padding: 30px 30px 40px 30px;
         background-color: var(--azul04);
     }
@@ -226,7 +228,7 @@
     .slider{
         margin: auto;
         width: 100%;
-        height: 300px;
+        height: auto;
         overflow: hidden;
 
     }
@@ -269,7 +271,7 @@
         font-family:'Signika Negative', Arial, Helvetica, sans-serif ;
         margin: auto;
         width: 100%;
-        height: 450px;
+        height: auto;
         background-color: #102C54;
         color: white;
         padding-top: 10px;
@@ -280,8 +282,8 @@
         font-weight: bolder;
         text-align: center;
         width: auto;
-        width: 100%;
-        height: 300px;
+
+        height: auto;
         padding-top: 100px;
     }
 
@@ -302,22 +304,23 @@
     }
 
     /*Pagina Sobre*/
-    section#inicioSobre{
+    section#inicial{
         width: 100%;
-        height: 500px;
+        height:auto;
         background-image: url('../img/fundo_sobre.png') ; 
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding-bottom: 20px;
     }
-    section#inicioSobre > h1 {
+    section#inicial> h1 {
         font-size: 56px;
         font-family: 'Signika Negative', Arial, Helvetica, sans-serif ;
         color: white;
         margin-left: 100px;
      }
 
-     section#inicioSobre > p {
+     section#inicial > p {
         font-size: 1.2em;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
