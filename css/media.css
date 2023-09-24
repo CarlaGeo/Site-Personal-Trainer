@@ -146,17 +146,25 @@
        
     }
 
-    section#TreinosPersonalizados{
+    .SectionFundoBranco{
         margin: auto;
         width: 100%;
         text-align: center;
         padding-bottom: 50px;
     }
-    section#TreinosPersonalizados > h1{
+    .SectionFundoBranco > container{
+
+        margin: auto;
+        width: 80%;
+        padding: 20px 20px 20px 20px;
+    }
+   
+    .SectionFundoBranco > h1{
         margin: auto;
         padding: 40px 10px 10px 10px;
         font-size: 36px;
         font-family:'Signika Negative', Arial, Helvetica, sans-serif ;
+        text-align: center;
 
     }
     table{
@@ -178,12 +186,38 @@
         text-decoration: none;
     }
 
-    section#TipoTreino{
+    .SectionFundoAzul{
+        margin-top: 50px;
         width: 96%;
         height: auto;
-        padding: 30px 30px 40px 30px;
+        padding: 40px 30px 40px 30px;
         background-color: var(--azul04);
     }
+
+    .SectionFundoAzul > div
+   {
+        margin: auto;
+        width: 80%;
+        padding: 20px 20px 20px 20px;
+       
+   }
+
+   .SectionFundoAzul > div> h1{
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    font-size: 36px;
+    font-family:'Signika Negative', Arial, Helvetica, sans-serif ;
+    text-align: center;
+
+    }
+   .SectionFundoAzul > div > p{
+        line-height: 1.6;
+        text-align: justify;
+        text-indent: 1.1em;
+        font-size: 20px;
+        text-align: justify;
+   }
+
 
     aside {
         margin: auto;
@@ -216,21 +250,14 @@
         list-style-type: '\2714\00A0\00A0';
     }
     
-     section#Depoimentos{
-        margin: auto;
-        width: 100%;
-        padding-bottom: 30px;
-        font-family:'Signika Negative', Arial, Helvetica, sans-serif ;
-        font-size: 36px;
-        text-align: center;
-    } 
-
     .slider{
-        margin: auto;
+        margin-bottom: 50px;
         width: 100%;
         height: auto;
         overflow: hidden;
-
+        text-align: center;
+        font-size: 28px;
+       
     }
     .slider > .slider-content{
         display: flex;
@@ -327,15 +354,15 @@
         margin-left: 100px;
      }
 
-     section#sobre{
+     /* section#sobre{
         padding: 20px;
         width: 90%; 
         height: 600px; 
         
-     }
+     } */
             
     #container {
-        margin-left: auto;
+       margin:auto;
         padding: 20px;
         width: 80%;
         position: inherit;
@@ -345,6 +372,7 @@
 
     #esquerdo {
         vertical-align: top;
+        
         display: inline-block;
     }
     #direito {
@@ -354,12 +382,14 @@
     }
 
     #direito > h2 {
+        font-family: 'Signika Negative', Arial, Helvetica, sans-serif ;
         font-size: 40px;
         text-align: center;
         line-height: 1.6;
     }
 
     #direito > h3 {
+        font-family: 'Signika Negative', Arial, Helvetica, sans-serif ;
         font-size: 30px;
         text-align: center;
         line-height: 1.6;
@@ -370,15 +400,7 @@
         padding: 0px 50px 0px 50px;
         line-height: 1.6;
     }
-    section#historia{
-        height: 500px;
-        line-height: 1.6;
-        padding: 20px 120px 70px 120px;
-        text-align: justify;
-        text-indent: 1.1em;
-        font-size: 20px;
-        background-color:var(--azul04);
-   }
+    
 
     section#AHoraEAgora{
         background-color: var(--azul06);
