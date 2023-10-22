@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css">
+    <script src="js/bootstrap_js/bootstrap.js"></script>
     <script src="js/script.js"></script>
     <style>
         .palavra{
@@ -15,7 +17,6 @@
         }
     </style>
 </head>
-
 <body onresize="mudouTamanho()">
     <section id="inicioIndex">
     <header>
@@ -27,7 +28,7 @@
                     <li><a href="treinos.html" target="_self">TREINOS</a></li>
                     <li><a href="produtos.html">PRODUTOS</a></li>
                     <li><a href="depoimentos.html">DEPOIMENTOS</a></li>
-                    <li class="BotaoContato" ><a href="contato.html" type="button">CONTATO</a></li>
+                    <li ><a href="contato.html"><button class="btAgende">Contato</button></a></li>
                 </ul>
             </menu> 
         </div>
@@ -37,9 +38,11 @@
         <img id="logo" src="img/sua-logo-aqui.png" alt="logo marca">
         <div id="textoSection">
             <div>A HORA É <span class="palavra">AGORA!</span></div>
-            <div style="font-size: 40px;"> Conquiste seus objetivos de forma segura e eficaz!</div><br>
+            <div style="font-size: 40px;"> Conquiste seus objetivos de forma segura e eficaz!</div>
             <div>Treinos personalizados!</div>
-            <button  class="BotaoAgende"><a href="contato.html">AGENDE SUA AVALIAÇÃO</a></button>
+            <a href="contato.html"><button class="btAgende">AGENDE SUA AVALIAÇÃO</button></a> 
+          
+         
         </div>
     </div>
     </section>
@@ -47,7 +50,8 @@
     <main>
         <section class="SectionFundoBranco">
            <h1>TREINOS PERSONALIZADOS PARA ATINGIR OS RESULTADOS QUE VOCÊ DESEJA</h1>
-           <table>
+
+            <table>
                <tr>
                     <td><a href="treinos.html" target="self"><img src="img/Alto Rendimento.png" alt="Alto Rendimento"></a></td>
                     <td><a href="treinos.html" target="_self"><img src="img/Definicao.png" alt="Definição"></a></td>
@@ -68,7 +72,7 @@
                     <td><a href="treinos.html" target="_self">PERFORMANCE</a></td>
                     <td><a href="treinos.html" target="_self">CORREÇÃO POSTURAL</a></td>
                </tr>
-           </table>
+           </table> 
         </section>
         
         <section class="SectionFundoAzul">
@@ -95,21 +99,29 @@
 
         <section class="SectionFundoBranco">
             <h1>Depoimentos de alunos</h1>
-            <section class="slider">
-                <input name='slide' type="radio" checked >
-                <input name='slide' type="radio" >
-                <input name='slide' type="radio">
-                <input name='slide' type="radio">
-                <p></p>
-                <div class="slider-content">
-                    <div class="slider-item"><p>Ótimo professor e uma vibe muito boa!!!! - valeria.coin</p></div>
-                    <div class="slider-item"><p>Parabéns prof.!! Quem ama o que faz traz para si e para os outros mais saúde, bem estar e felicidade. - b.a_roberta.</p> </div>
-                    <div class="slider-item"><p>Esse  meu treinador é o melhor e manja demais. Davi o melhor. - ale.v.ramalho</p></div>
-                    <div class="slider-item"><p>Depoimento</p></div>
-                </div>
-                <button  class="BotaoAgende"><a href="depoimentos.html">Veja todos os depoimentos</a></button>
-            </section>
-           
+                    <div style="display: inline-flex;">
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-body">
+                              <p class="card-text">Ótimo professor e uma vibe muito boa!!!!.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-primary">valeria.coin</div>
+                        </div>
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-body">
+                              <p class="card-text">Parabéns prof.!! Quem ama o que faz traz para si e para os outros mais saúde, bem estar e felicidade</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-primary">b.a_roberta.</div>
+                        </div>
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-body">
+                              <p class="card-text">Esse  meu treinador é o melhor e manja demais. Davi o melhor.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-primary">ale.v.ramalho.</div>
+                        </div>
+                        
+                    </div>
+                    <div><button  class="BotaoAgende"><a href="depoimentos.html">Veja todos os depoimentos</a></button></div>
+   
         </section>
 
         <section id="Contato">
