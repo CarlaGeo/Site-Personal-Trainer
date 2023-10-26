@@ -5,18 +5,20 @@
 /*DECLAÇÃO DE VARIÁVEIS*/
 
 
-* { /*Todos os elementos terão essas configurações se não estiver em  uma configuração própria*/
+* {
+    /*Todos os elementos terão essas configurações se não estiver em  uma configuração própria*/
     margin: 0px;
     padding: 0px;
 }
 
-body, html {
+body,
+html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    
-   
 }
+
 section#inicio {
+
     width: 100%;
     height: 650px;
     background-image: url('../img/halter.png');
@@ -30,21 +32,44 @@ header {
     width: 100%;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: white !important;
 }
-.nav-link{
-    color: white !important;
 
+.nav-link {
+    color: white !important;
 }
+
+div#textoInicial {
+    margin: auto;
+    max-width: 1100px;
+    text-align: center;
+}
+img#logo {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+div#textoSection {
+    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    float: left;
+    color: var(--branco);
+    width: 850px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+
 .SectionFundoBranco {
     margin: auto;
     width: 100%;
+    height: auto;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 50px;
 }
-
 
 .SectionFundoAzul {
     width: 100%;
@@ -53,7 +78,7 @@ header {
     background-color: var(--azul04);
 }
 
-.SectionFundoAzul > h2, h4{
+.SectionFundoAzul > h2,h4 {
     margin: auto;
     text-align: center;
 }
@@ -66,6 +91,7 @@ header {
     padding: 10px 30px 10px 30px;
     line-height: 1.6;
 }
+
 
 table {
     margin: auto;
@@ -83,12 +109,11 @@ td {
     /*Alinhamento vertical*/
 }
 
-td>a {
+td > a {
 
     color: black;
     text-decoration: none;
 }
-
 
 aside {
     margin: auto;
@@ -101,7 +126,7 @@ aside {
     font-size: 18px;
 }
 
-aside>h2 {
+aside > h2 {
     font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
     background-color: #271a5c;
     color: white;
@@ -110,7 +135,7 @@ aside>h2 {
     border-radius: 10px 10px 0px 0px;
 }
 
-aside>ul {
+aside > ul {
     margin: auto;
     width: 100%;
     padding: 10px 10px 10px 10px;
@@ -122,62 +147,92 @@ aside>ul {
     list-style-type: '\2714\00A0\00A0';
 }
 
-#carouselExample{
+#carouselExample {
     margin: auto;
 }
 
 .carousel-multiple {
-  overflow: hidden;
+    overflow: hidden;
 
-  .carousel-indicators {
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 1%;
-    z-index: 1;
-  }
-
-  .carousel-inner {
-    display:flex;
-  }
-
-  .carousel-item-next:not(.carousel-item-start),
-  .carousel-item-end.active {
-    -webkit-transform: translate3d(33%, 0, 0);
-    transform: translate3d(33%, 0, 0);
-  }
-
-  .carousel-item-prev:not(.carousel-item-end),
-  .carousel-item-start.active {
-    -webkit-transform: translate3d(-33%, 0, 0);
-    transform: translate3d(-33%, 0, 0);
-  }
-
-  .carousel-item {
-      flex-wrap: wrap;
-    
-    .tripartite {
-      width: 100%;
-      max-width: 100%;
-      flex: 1 0 0%;
-      padding-right: 1rem;
-      padding-left: 1rem;
+    .carousel-indicators {
+        margin-right: 10%;
+        margin-left: 10%;
     }
-  }
-  
-  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
-    display: flex;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 1%;
+        z-index: 1;
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item-next:not(.carousel-item-start),
+    .carousel-item-end.active {
+        -webkit-transform: translate3d(33%, 0, 0);
+        transform: translate3d(33%, 0, 0);
+    }
+
+    .carousel-item-prev:not(.carousel-item-end),
+    .carousel-item-start.active {
+        -webkit-transform: translate3d(-33%, 0, 0);
+        transform: translate3d(-33%, 0, 0);
+    }
+
+    .carousel-item {
+        flex-wrap: wrap;
+
+        .tripartite {
+            width: 100%;
+            max-width: 100%;
+            flex: 1 0 0%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active {
+        display: flex;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url('../img/next.svg');
+
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url('../img/back.svg');
+
+    }
 }
 
-.carousel-control-next-icon {
-    background-image: url('../img/next.svg');
-   
+iframe {
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    /* padding-left: 60px;
+     */
+    text-align: center;
 }
-.carousel-control-prev-icon {
-    background-image: url('../img/back.svg');
-   
+
+footer {
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    background-color: var(--azul06);
+
 }
+
+
+footer>div {
+    width: 100%;
+    margin: auto;
+  
+ 
+    text-align: center;
+    color: white;
 }
