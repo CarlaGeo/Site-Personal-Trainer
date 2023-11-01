@@ -350,4 +350,46 @@ img{
     opacity: 1;
   }
 
-/*FORMULARIO FALE*/
+/*Pagina Sobre*/
+section#inicial {
+    width: 100%;
+    height: auto;
+    background-image: url('../img/fundo_sobre.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+section#inicial>h1 {
+    font-size: 56px;
+    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 100px;
+}
+
+section#inicial>  p {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  
+}
+
+div#sobreMim{
+    width: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding: 20px;
+   
+}
+
+div#sobreMim .col-sm-3{
+    text-align: right;
+    
+    
+}
+
+div#sobreMim .col-sm-8{
+    text-align: center;
+    
+}
