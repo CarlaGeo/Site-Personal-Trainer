@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="br-pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Trainer</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/media.css">
-    <script src="js/script.js"></script>
-    <style>
-        .palavra{
-            color: red;
-            font-weight: bolder;
+    <head>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css">
+      <script src="js/bootstrap_js/bootstrap.js"></script>
+      <script src="js/script.js"></script>
+      <style>
+        .palavra {
+          color: red;
+          font-weight: bolder;
         }
-   </style>
-</head>
-<body onresize="mudouTamanho()">
+      </style>
+    </head>
+<body>
     <section id="inicial">
         <header>
-            <div id="superior">
-                <menu id="itens">
-                    <ul>
-                        <li><a href="index.html" target="_self">INÍCIO</a></li>
-                        <li><a href="sobre.html" target="_self">SOBRE</a></li>
-                        <li><a href="treinos.html" target="_self">TREINOS</a></li>
-                        <li><a href="produtos.html">PRODUTOS</a></li>
-                        <li><a href="depoimentos.html">DEPOIMENTOS</a></li>
-                        <li class="BotaoContato" ><a href="contato.html" type="button">CONTATO</a></li>
-                    </ul>
-                </menu> 
-            </div>
-            <!-- <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span> Ícone do Menu-->
+            <nav id="menu" class="navbar navbar-brand bg-blue color-white px-3">
+                <a class="navbar-brand" href="HOME.HTML" target="_self">Home</a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre.html" target="_self">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Treinos">Treinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Servicos">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Produtos">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Depoimentos">Depoimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contato">Contato</a>
+                  </li>
+                </ul>
+              </nav>
         </header>
     <h1>Atendimento Personalizado</h1>
     <p>Conheça os tipos de treinamentos personalizados.</p>
@@ -38,47 +49,72 @@
     <main>
         <section class="SectionFundoBranco" >
            <h1>TREINOS PERSONALIZADOS PARA ATINGIR OS RESULTADOS QUE VOCÊ DESEJA</h1>
-            <div id="containerServico">
-                <div id="esquerdoServico"><img src="img/Alto Rendimento.png" alt=""></div>
-                <div id="direitoServico"> <p>Alto Rendimento</p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</div>
-            </div>
-            <div id="containerServico">
-                <div id="esquerdoServico"><img src="img/Definicao.png" alt=""></div>
-                <div id="direitoServico"> <p>Definição</p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</div>
-            </div>
-            <div id="containerServico">
-                <div id="esquerdoServico"><img src="img/emagrecimento.png" alt=""></div>
-                <div id="direitoServico"> <p>Emagrecimento</p> 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</div>
-            </div>
-            <div id="containerServico">
-                <div id="esquerdoServico"><img src="img/Hipertofia.png" alt=""></div>
-                <div id="direitoServico"> <p>Hipertrofia</p> 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</div>
-            </div>
-            <div id="containerServico">
-                <div id="esquerdoServico"><img src="img/Performance.png" alt=""></div>
-                <div id="direitoServico"> <p>Performance</p> 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</div>
-            </div>
-            <div id="containerServico">
-                <div id="esquerdoServico"><img src="img/Qualidade de Vida.png" alt=""></div>
-                <div id="direitoServico"> <p>Qualidade de Vida</p> 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</div>
-            </div>
+
+           <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item"><img src="img/Alto Rendimento.png" alt=""></li>
+            <li class="list-group-item"><p>Alto Rendimento</p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item"><img src="img/Definicao.png" alt=""></li>
+            <li class="list-group-item"><p>Definição</p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item"><img src="img/emagrecimento.png" alt=""></li>
+            <li class="list-group-item"><p>Emagrecimento</p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item"><img src="img/Hipertofia.png" alt=""></li>
+            <li class="list-group-item"><p>Hipertrofia</p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item"><img src="img/Performance.png" alt=""></li>
+            <li class="list-group-item"><p>Performance</p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item"><img src="img/Qualidade de Vida.png" alt=""></li>
+            <li class="list-group-item"><p>Qualidade de Vida</p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, impedit quae veritatis aperiam sunt ullam tenetur numquam perferendis, repellendus iusto, quod aliquam nostrum tempore. Est expedita ex fugiat repudiandae dignissimos.</li>
+          </ul>
 
         </section>   
-        <section id="AHoraEAgora">
-    
-            <div>Não perca tempo para acrescentar mais saúde no seu dia-a-dia!</div>
-            <div><button  class="BotaoAgende"><a href="contato.html">AGENDE SUA AVALIAÇÃO</a></button></div>
-     
-      </section>
-      <iframe src="iframe-Contato.html" frameborder="0"  >
-        <p>Infelizmente seu navegador não é compatível</p>
-    </iframe>         
+        <div class="content">
+            <div>
+                <h2>Não perca tempo para acrescentar mais saúde no seu dia-a-dia!</h2>
+            </div>
+       </div>
+       <section class="SectionFundoBranco">
+        <h2 id="Contato">CONTATO</h2>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+
+            <div class="col">
+              <p>Fale Conosco</p>
+                <p style="font-weight: 100;">Se você tiver qualquer dúvida ou precisa de um orçamento, sinta-se a vontade para nos contatar.</p>
+                <p> &#9743 (13) 98197-930</p>
+                <p> &#9993 email@gmail.com.br</p>
+              <div style="vertical-align:top,  display=inline-block;">
+                <a href="https://wa.link/n64uap" target="_blank"><img src="img/Whatsapp.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col">
+              <p>Deixe sua mensagem</p>
+              <form class="form-contato" method="post" tabindex="1">
+                <input type="text" class="form-contato-input" name="nome" placeholder="Nome" required>
+                <input type="email" class="form-contato-input" name="email" placeholder="E-mail" required>
+                <input type="tel" class="form-contato-input" name="tel" placeholder="Celular">
+                <textarea class="form-contato-textarea" name="conteudo" placeholder="Deixe sua mensagem"
+                  required></textarea>
+                <button type="submit" class="form-contato-button">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>        
     </main>
     <footer>
         <div>Todos os Direitos Reservados a Personal Trainner</div>

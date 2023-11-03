@@ -20,13 +20,13 @@
     <section id="inicial">
     <header>
         <nav id="menu" class="navbar navbar-brand bg-blue color-white px-3">
-            <a class="navbar-brand" href="HOME.HTML">Home</a>
+            <a class="navbar-brand" href="HOME.HTML" target="_self"> Home</a>
             <ul class="nav nav-pills">
               <li class="nav-item">
                 <a class="nav-link" href="#Sobre">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Treinos">Treinos</a>
+                <a class="nav-link" href="treinos.html" target="_self">Treinos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Servicos">Serviços</a>
@@ -42,7 +42,6 @@
               </li>
             </ul>
           </nav>
-         <!-- <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span> Ícone do Menu-->
     </header>
     <h1>Sobre o Personal Trainer </h1>
     <p>Conheça alguns detalhes sobre a minha carreira como professor e personal trainer.</p>
@@ -80,16 +79,37 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam ex, modi quaerat expedita quas suscipit minima exercitationem ratione ullam minus hic libero architecto! Et numquam reiciendis dolore itaque? Quisquam.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam ex, modi quaerat expedita quas suscipit minima exercitationem ratione ullam minus hic libero architecto! Et numquam reiciendis dolore itaque? Quisquam.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam ex, modi quaerat expedita quas suscipit minima exercitationem ratione ullam minus hic libero architecto! Et numquam reiciendis dolore itaque? Quisquam.</p>
-           
         </div>
-    <section class="SectionFundoBranco">
     
-          <h2>Não perca tempo para acrescentar mais saúde no seu dia-a-dia!</h2>
-          <div style="text-align: center;"><a href="contato.html" class="btn btn-primary">AGENDE SUA AVALIAÇÃO</a></div>
-    </section>
-    <iframe src="iframe-Contato.html" frameborder="0"  >
-        <p>Infelizmente seu navegador não é compatível</p>
-    </iframe>
+        <section class="SectionFundoBranco">
+          <h2 id="Contato">Contato</h2>
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+
+              <div class="col">
+                <p>Fale Conosco</p>
+                  <p style="font-weight: 100;">Se você tiver qualquer dúvida ou precisa de um orçamento, sinta-se a vontade para nos contatar.</p>
+                  <p> &#9743 (13) 98197-930</p>
+                  <p> &#9993 email@gmail.com.br</p>
+                <div style="vertical-align:top,  display=inline-block;">
+                  <a href="https://wa.link/n64uap" target="_blank"><img src="img/Whatsapp.png" alt=""></a>
+                </div>
+              </div>
+              <div class="col">
+                <p>Deixe sua mensagem</p>
+                <form class="form-contato" method="post" tabindex="1">
+                  <input type="text" class="form-contato-input" name="nome" placeholder="Nome" required>
+                  <input type="email" class="form-contato-input" name="email" placeholder="E-mail" required>
+                  <input type="tel" class="form-contato-input" name="tel" placeholder="Celular">
+                  <textarea class="form-contato-textarea" name="conteudo" placeholder="Deixe sua mensagem"
+                    required></textarea>
+                  <button type="submit" class="form-contato-button">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </section>
     </main>
     <footer>
         <div>Todos os Direitos Reservados a Personal Trainner</div>
