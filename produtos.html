@@ -2,63 +2,114 @@
 <html lang="br-pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Trainer</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/media.css">
-    <script src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css">
+  <script src="js/bootstrap_js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <style>
+    .palavra {
+      color: red;
+      font-weight: bolder;
+    }
+  </style>
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <section id="inicial">
-    <header>
-        <div id="superior">
-            <menu id="itens">
-                <ul>
-                    <li><a href="index.html" target="_self">INÍCIO</a></li>
-                    <li><a href="sobre.html" target="_self">SOBRE</a></li>
-                    <li><a href="treinos.html" target="_self">TREINOS</a></li>
-                    <li><a href="produtos.html">PRODUTOS</a></li>
-                    <li><a href="depoimentos.html">DEPOIMENTOS</a></li>
-                    <li class="BotaoContato" ><a href="contato.html" type="button">CONTATO</a></li>
+        <header>
+            <nav id="menu" class="navbar navbar-brand bg-blue color-white px-3">
+                <a class="navbar-brand" href="HOME.HTML" target="_self"> Home</a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre.html" target="_self">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="treinos.html" target="_self">Treinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Servicos">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Produtos">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="depoimentos.html">Depoimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
                 </ul>
-            </menu> 
-        </div>
-         <!-- <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span> Ícone do Menu-->
-    </header>
-    <h1>Poodutos e Suplementos</h1>
-    <p>Suplementos para turbinar o treino a ajutar a atngir ser objetivos</p>
-    </section>
+              </nav>
+        </header>
+        <h1>Sobre o Personal Trainer </h1>
+        <p>Conheça alguns detalhes sobre a minha carreira como professor e personal trainer.</p>
+        </section>
+    
     <main>
         <section class="SectionFundoBranco">
 
             <h1>Confira nossos Produtos e Suplementos</h1>
-            <container>
-                <table>
-                    <tr>
-                         <td><img src="img/creatina.png" alt="creatina"></a></td>
-                         <td></td>
-                         <td></a></td>
-                    </tr>
-                    <tr >
-                         <td>Creatina</td>
-                         <td></td>
-                         <td></td>
-                    </tr>
-                    <tr>
-                         <td><img src="img/thermo abdomen.png" alt="Thermo o Abdomen"></a></td>
-                         <td></td>
-                         <td></td>
-                    </tr>
-                    <tr>
-                         <td>Thermo Abdomen</td>
-                         <td></td>
-                         <td></td>
-                    </tr>
-                </table>
-            </container>
-        </section>
 
+            <div class="container">
+                <div class="gallery">
+                    <figure class="gallery__item gallery__item--1">
+                        <img src="img/creatina.png" alt="Gallery image 1" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                        <img src="img/thermo abdomen.png" alt="Gallery image 2" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                        <img src="img/creatina.png" alt="Gallery image 3" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item gallery__item--4">
+                        <img src="img/thermo abdomen.png" alt="Gallery image 4" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item gallery__item--5">
+                        <img src="img/thermo abdomen.png" alt="Gallery image 5" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item gallery__item--6">
+                        <img src="img/creatina.png" alt="Gallery image 6" class="gallery__img">
+                    </figure>
+                </div>
+            </div>
+
+
+
+        </section>
+        <div class="content">
+            <div>
+                <h2>Não perca tempo para acrescentar mais saúde no seu dia-a-dia!</h2>
+            </div>
+         </div>
+         <section class="SectionFundoBranco">
+          <h2 id="Contato">CONTATO</h2>
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+              <div class="col">
+                <p>Fale Conosco</p>
+                  <p style="font-weight: 100;">Se você tiver qualquer dúvida ou precisa de um orçamento, sinta-se a vontade para nos contatar.</p>
+                  <p> &#9743 (13) 98197-930</p>
+                  <p> &#9993 email@gmail.com.br</p>
+                <div style="vertical-align:top,  display=inline-block;">
+                  <a href="https://wa.link/n64uap" target="_blank"><img src="img/Whatsapp.png" alt=""></a>
+                </div>
+              </div>
+              <div class="col">
+                <p>Deixe sua mensagem</p>
+                <form class="form-contato" method="post" tabindex="1">
+                  <input type="text" class="form-contato-input" name="nome" placeholder="Nome" required>
+                  <input type="email" class="form-contato-input" name="email" placeholder="E-mail" required>
+                  <input type="tel" class="form-contato-input" name="tel" placeholder="Celular">
+                  <textarea class="form-contato-textarea" name="conteudo" placeholder="Deixe sua mensagem"
+                    required></textarea>
+                  <button type="submit" class="form-contato-button">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>  
     </main>
     <footer>
         <div>Todos os Direitos Reservados a Personal Trainner</div>
