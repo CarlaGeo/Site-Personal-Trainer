@@ -20,89 +20,53 @@
       }
       section{
             width: 100%;
-        }
-        #container {
-            margin: auto;
-            position:inherit;
-            display: grid;
-            grid-template-columns: 600px 600px;         
-        }
-        #esquerdo {
-            vertical-align: top;
-            display: inline-block;
+            margin: 20px;
             padding: 20px;
-           
-        }
-
-        #esquerdo > fieldset > div {
-            font-size: 1.2em;
-            padding: 10px 10px 10px 50px;
-        }
-        #direito {
-            vertical-align: top;
-            display: inline-block;
-            padding: 20px 20px 20px 20px;
-          
         }
        
-        button{
-            background-color: var(--vermelho);
-            width: 100%;
-            height: 40px;
-            border-radius: 5px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
-            border: none;
-            color: white;
-        }
-        button:hover{
-            background-color: var(--vermelho1);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
-        }
-        button > a:hover{
-            text-decoration: none;
-            color: black;
-        }
+
     </style>
 </head>
 <body>
     <section> 
-        <div id="container">
-            <div id="esquerdo">
-                <fieldset>
-                    <legend>Fale Conosco</legend>
-                    <div> <p>Se você tiver qualquer dúvida ou precisa de um orçamento, sinta-se a vontade para nos contatar.</p></div>
-                    <div> <p> &#9743 (13) 98197-930</p></div>
-                    <div> <p> &#9993 email@gmail.com.br</p> </div>
-                    <div style="vertical-align:top,  display=inline-block;">
-                        <a href="https://wa.link/n64uap" target="_blank" ><img src="img/Whatsapp.png" alt=""></a>
-                    </div>
+     
+
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col-25">
+              <div class="card h-100">
+                <div class="card-body">           
+                  <p class="card-text">
+                    <a href="https://wa.link/n64uap" target="_blank" ><img src="img/Whatsapp.png" class="img-fluid rounded-start" alt="..."></a>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div id="direito">
-            </fieldset>
-            <form >
-                <fieldset>
-                    <legend>Deixe a sua mensagem</legend>
-                    <div class="form-group">
-                        <input type="text"  class="form-control" name="nome" id="inome" required minlength="5" maxlength="15" placeholder="Preencha o seu nome" autocomplete="name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email"  class="form-control"  name="email" id="iemail"  placeholder="Seu e-mail" autocomplete="mail" required size="50">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel"  class="form-control" name="telefone" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="Seu telefone" required>
-                    </div> 
-                    <div class="form-group">
-                        <textarea type="text"  class="form-control" rows="5" name="mensagem" id="imensagem"  autocomplete="msg"  placeholder="Sua mensagem aqui" required ></textarea>
-                    </div> 
-                    <div class="form-group">
-                        <button type="submit" >Enviar</button> 
-                    </div>
-                </fieldset>
-            </form>
-            </div> 
-        </div>
+            <div class="col-25">
+              <div class="card h-100 ">
+                <div class="card-body">
+                  <h5 class="card-title">Fale Conosco</h5>
+                  <p class="card-text">Se você tiver qualquer dúvida ou precisa de um orçamento, sinta-se a vontade para nos contatar.</p>
+                  <p class="card-text">&#9743 (13) 98197-930</p>
+                  <p class="card-text">&#9993 email@gmail.com.br</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-25">
+              <div class="card h-100">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>             
+                </div>
+              </div>
+            </div>
+           
+          </div>
+
+
+
+
+
+          
     </section>
 </body>
 </html>

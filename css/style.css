@@ -480,3 +480,17 @@ div#sobreMim .col-sm-8{
     /* grid-column: 5 / span 4; */
     /* grid-row: 6 / span 3; */
   }
+
+  
+  .comCor {
+    margin: 20px auto;
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    background-color: #9ad4fe5b;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.251);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}

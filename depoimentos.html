@@ -2,36 +2,53 @@
 <html lang="br-pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Trainer</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/media.css">
-    <script src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para icones-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css">
+  <script src="js/bootstrap_js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <style>
+    .palavra {
+      color: red;
+      font-weight: bolder;
+    }
+  </style>
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <section id="inicial">
     <header>
-        <div id="superior">
-            <menu id="itens">
-                <ul>
-                    <li><a href="index.html" target="_self">INÍCIO</a></li>
-                    <li><a href="sobre.html" target="_self">SOBRE</a></li>
-                    <li><a href="treinos.html" target="_self">TREINOS</a></li>
-                    <li><a href="produtos.html">PRODUTOS</a></li>
-                    <li><a href="depoimentos.html">DEPOIMENTOS</a></li>
-                    <li class="BotaoContato" ><a href="contato.html" type="button">CONTATO</a></li>
-                </ul>
-            </menu> 
-        </div>
-         <!-- <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span> Ícone do Menu-->
+        <nav id="menu" class="navbar navbar-brand bg-blue color-white px-3">
+              <a class="navbar-brand" href="HOME.HTML" target="_self"> Home</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre.html" target="_self">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="treinos.html" target="_self">Treinos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="depoimentos.html">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+              </ul>
+        </nav>
     </header>
     <h1>Depoimentos de Alunos</h1>
     <p>Confira o que estão falando</p>
     </section>
 
-    <main id="mainDepoimentos">
-         <div class="comCor">
+    <main id="SectionFundoBranco">
+        <div class="comCor">
             <p>"Ótimo professor e uma vibe muito boa!!!!" <br/></p>
             <img src="img/fotodepoimentos.png" alt="" style="width: 100px; height: 100px; border-radius: 50px;">- valeria.coin
         </div>
@@ -52,11 +69,13 @@
          <div class="comCor">
             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non modi sit quas officia neque ducimus, in, ratione deserunt asperiores quo temporibus perspiciatis error facere. Vitae cupiditate eligendi beatae quasi?" <br/></p>
             <img src="img/fotodepoimentos.png" alt="" style="width: 100px; height: 100px; border-radius: 50px;">
+           
          </div>
-        <section id="AHoraEAgora">
-            <div>Não perca tempo para acrescentar mais saúde no seu dia-a-dia!</div>
-            <div><button  class="BotaoAgende"><a href="contato.html">AGENDE SUA AVALIAÇÃO</a></button></div>
-        </section>
+         <div class="content">
+            <div>
+                <h2>Não perca tempo para acrescentar mais saúde no seu dia-a-dia!</h2>
+            </div>
+         </div>
         <iframe src="iframe-Contato.html" frameborder="0"  >
             <p>Infelizmente seu navegador não é compatível</p>
         </iframe>         
